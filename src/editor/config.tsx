@@ -1,3 +1,13 @@
+import {
+  PlusIcon,
+  StrikethroughIcon,
+  TextAlignLeftIcon,
+  TextAlignCenterIcon,
+  TextAlignRightIcon,
+  FontBoldIcon,
+  FontItalicIcon,
+} from '@radix-ui/react-icons';
+
 export const CommandComponents = {
   'add-more': 'o-add-more-btn',
   'font-family': 'o-font-family-dropdown',
@@ -19,13 +29,38 @@ export const CommandComponents = {
 }
 
 export const DefaultToolbar = [
-  'add-more',
-  'separator',
-  'bold',
-  'italic',
-  'underline',
+  {
+    items: [
+      {
+        name: "addMore",
+        icon: <PlusIcon /> 
+      },
+    ]
+  },
+  {
+    items: [
+      {
+        name: 'bold',
+        icon: <FontBoldIcon />
   'strike',
   'code',
+      },
+      {
+        name: 'italic',
+        icon: <FontItalicIcon />
+      },
+      {
+        name: "underline",
+        icon: <FontItalicIcon />
+      },
+      {
+        name: "strike",
+        icon: <FontStr
+      }
+    ]
+  }
+  'separator',
+  
   'separator',
   'heading',
   'font-family',
